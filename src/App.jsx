@@ -1,3 +1,5 @@
+import RecapCard from "./components/RecapCard";
+
 function App() {
   return (
     <div style={{ padding: "2rem", fontFamily: "sans-serif", textAlign: "center" }}>
@@ -5,19 +7,12 @@ function App() {
       <p style={{ marginBottom: "2rem" }}>
         Your personal highlight reel — custom, visual, and beautifully you.
       </p>
-      <button
-        style={{
-          background: "#111",
-          color: "#fff",
-          padding: "1rem 2rem",
-          border: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-          fontSize: "1rem"
-        }}
-      >
-        Start Your Wrapped
-      </button>
+
+      <RecapCard
+        title="Matcha Lattes Consumed"
+        stat="327 cups"
+        emoji="🍵"
+      />
     </div>
   );
 }
