@@ -19,24 +19,16 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "2rem", fontFamily: "sans-serif", textAlign: "center" }}>
-      <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>✨ Life Wrapped ✨</h1>
-      <p style={{ marginBottom: "2rem" }}>
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-4 py-8 font-sans text-center">
+      <h1 className="text-3xl font-bold mb-2">✨ Life Wrapped ✨</h1>
+      <p className="mb-8 text-gray-300 max-w-md">
         Your personal highlight reel — custom, visual, and beautifully you.
       </p>
 
       {!started && (
         <button
           onClick={() => setStarted(true)}
-          style={{
-            background: "#111",
-            color: "#fff",
-            padding: "1rem 2rem",
-            border: "none",
-            borderRadius: "8px",
-            cursor: "pointer",
-            fontSize: "1rem"
-          }}
+          className="bg-white text-gray-900 font-medium px-6 py-3 rounded-xl hover:bg-gray-200 transition"
         >
           Start Your Wrapped
         </button>
@@ -53,21 +45,12 @@ function App() {
           {currentCard < recapData.length - 1 ? (
             <button
               onClick={handleNext}
-              style={{
-                marginTop: "1rem",
-                background: "#444",
-                color: "#fff",
-                padding: "0.75rem 2rem",
-                border: "none",
-                borderRadius: "8px",
-                cursor: "pointer",
-                fontSize: "1rem"
-              }}
+              className="mt-4 bg-gray-700 text-white font-medium px-6 py-2 rounded-lg hover:bg-gray-600 transition"
             >
               Next →
             </button>
           ) : (
-            <p style={{ marginTop: "1rem", fontStyle: "italic" }}>That's a wrap! 🎉</p>
+            <p className="mt-4 italic text-gray-400">That's a wrap! 🎉</p>
           )}
         </>
       )}
