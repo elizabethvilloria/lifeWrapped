@@ -54,6 +54,11 @@ function App() {
           )}
         </>
       )}
+
+<footer className="mt-10 text-sm text-gray-500">
+  Built with ☕️ and love by elizabethvilloria
+</footer>
+
     </div>
   );
 }
