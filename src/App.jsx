@@ -47,11 +47,15 @@ function App() {
 
           {currentCard < recapData.length - 1 ? (
             <button
-              onClick={handleNext}
-              className="mt-4 bg-gray-700 text-white font-medium px-6 py-2 rounded-lg hover:bg-gray-600 transition"
-            >
-              Next →
-            </button>
+            onClick={() => {
+              setStarted(false);
+              setCurrentCard(0);
+            }}
+            className="mt-4 bg-gray-300 text-gray-900 font-medium px-4 py-2 rounded hover:bg-gray-400 transition"
+          >
+            🔁 Replay Wrapped
+          </button>
+          
           ) : (
             <p className="mt-4 italic text-gray-400">That's a wrap! 🎉</p>
           )}
