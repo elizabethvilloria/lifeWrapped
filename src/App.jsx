@@ -6,6 +6,8 @@ const recapData = [
   { title: "Books You Read", stat: "18 total", emoji: "📚" },
   { title: "Photos Taken", stat: "1,642 snaps", emoji: "📸" },
   { title: "Hours Slept", stat: "2,130 hours", emoji: "😴" },
+  { title: "Songs Played", stat: "4,219 jams", emoji: "🎧" },
+
 ];
 
 function App() {
