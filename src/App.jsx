@@ -21,7 +21,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center px-4 py-8 font-sans text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center ...">
+
       <h1 className="text-3xl font-bold mb-2">✨ Life Wrapped ✨</h1>
       <p className="mb-8 text-gray-300 max-w-md">
         Your personal highlight reel — custom, visual, and beautifully you.
