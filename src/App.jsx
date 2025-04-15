@@ -30,7 +30,8 @@ function App() {
       {!started && (
         <button
           onClick={() => setStarted(true)}
-          className="bg-white text-gray-900 font-medium px-6 py-3 rounded-xl hover:scale-105 transition transform duration-300"
+          className="... shadow-lg hover:shadow-xl transition"
+
 
         >
           Start Your Wrapped
